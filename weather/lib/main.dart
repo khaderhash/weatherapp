@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
           primarySwatch: Provider.of<Weatherdata>(context).wethhher == null
-              ? Colors.blue
+               ? Colors.blue
               : Provider.of<Weatherdata>(context).wethhher!.getithemecolor()),
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),

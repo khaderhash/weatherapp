@@ -22,7 +22,7 @@ class searchpage extends StatelessWidget {
             onSubmitted: (value) async {
               cityselect = value;
               services kh = services();
-              weathermodel detal = await kh.getweather(namecity: cityselect!);
+              weathermodel? detal = await kh.getweather(namecity: cityselect!);
 
               Provider.of<Weatherdata>(context, listen: false).weatherdata =
                   detal;

@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -46,6 +45,7 @@ class weathermodel {
     } else {
       Colors.white38;
     }
+    return Colors.blue;
   }
 
   String getimage() {

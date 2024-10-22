@@ -59,7 +59,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               )
             : Container(
-                // color: Colors.red[200],
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                  colors: [
+                    weatherr!.getithemecolor()!,
+                    Colors.white,
+                  ],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                )),
                 width: double.infinity,
                 height: double.infinity,
                 child: Center(
